@@ -94,7 +94,7 @@ export function ContactForm() {
           <input
             type="tel"
             className="form-input"
-            placeholder="(561) 584-3940"
+            placeholder="(254) 640-0999"
             {...register("phone", { required: true })}
           />
           {errors.phone ? (
@@ -170,8 +170,7 @@ export function ContactForm() {
       </button>
 
       <p className="mt-4 text-xs leading-6 text-muted text-center">
-        ✅ We respond within 15 minutes during business hours.
-        Emergency calls answered 24/7.
+        We respond during business hours. Call, text, or email anytime to leave a message.
       </p>
     </form>
   );

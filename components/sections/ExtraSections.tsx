@@ -320,7 +320,7 @@ export function QuoteEstimator() {
 
             {/* Disclaimer */}
             <p className="mt-8 text-xs leading-5 text-white/35">
-              * Estimates are ballpark figures based on typical Florida market rates. Actual pricing
+              * Estimates are ballpark figures based on typical Texas market rates. Actual pricing
               depends on your specific system, parts needed, and job complexity. A certified
               technician will provide an exact quote on-site.
             </p>
@@ -863,7 +863,7 @@ export function MaintenancePlans() {
 const faqs = [
   {
     q: "How quickly can you come out for a repair?",
-    a: "For emergencies, we aim to arrive within 2 hours of your call — 24/7, 365 days a year. For standard repairs, we offer same-day and next-day appointments in most cases. We'll always give you a clear arrival window.",
+    a: "For urgent calls, we aim to schedule as quickly as possible during business hours. For standard repairs, we offer same-day and next-day appointments when available. We'll always give you a clear arrival window.",
   },
   {
     q: "Do you give quotes before starting any work?",
@@ -887,7 +887,7 @@ const faqs = [
   },
   {
     q: "Are your technicians licensed and insured?",
-    a: "Every technician is NATE-certified, carries a valid Florida HVAC license, is fully insured, and has passed a background check. You'll always know who is coming to your home before they arrive.",
+    a: "Every technician is fully licensed, insured, and background-checked. You'll always know who is coming to your home before they arrive. Our Texas HVAC license is TACLA141376R.",
   },
   {
     q: "How often should I service my HVAC system?",
@@ -986,11 +986,11 @@ export function FAQSection() {
    6. TRUST & CREDENTIAL STRIP
    ───────────────────────────────────────────────────────────────────── */
 const credentials = [
-  { icon: Clock, label: "Open 24 Hours", sub: "Emergency HVAC" },
+  { icon: Clock, label: "Closes 5 PM", sub: "Call for hours" },
   { icon: Shield, label: "Licensed & Insured", sub: siteConfig.county },
-  { icon: MapPin, label: "Delray Beach, FL", sub: "Local contractor" },
-  { icon: Percent, label: "0% Financing", sub: "On new systems" },
-  { icon: Zap, label: "Same-Day Service", sub: "When available" },
+  { icon: MapPin, label: "Waco, TX", sub: "Local contractor" },
+  { icon: Percent, label: "Financing", sub: "Call or email" },
+  { icon: Zap, label: "Install & Repair", sub: "Residential & commercial" },
   { icon: ThumbsUp, label: "Upfront Pricing", sub: "Before work starts" },
 ];
 
@@ -1026,7 +1026,7 @@ export function TrustStrip() {
 const galleryJobs = [
   {
     title: "Trane 5-Ton AC Installation",
-    location: "Delray Beach, FL",
+    location: "Waco, TX",
     category: "ac-install",
     categoryLabel: "AC Installation",
     image: "/images/gallery-ac-install.webp",
@@ -1034,7 +1034,7 @@ const galleryJobs = [
   },
   {
     title: "Furnace Control Board & Tune-up",
-    location: "Boca Raton, FL",
+    location: "Woodway, TX",
     category: "heating",
     categoryLabel: "Heating",
     image: "/images/gallery-furnace-service.webp",
@@ -1042,7 +1042,7 @@ const galleryJobs = [
   },
   {
     title: "Attic Ductwork Replacement",
-    location: "Boynton Beach, FL",
+    location: "Hewitt, TX",
     category: "ductwork",
     categoryLabel: "Ductwork",
     image: "/images/gallery-duct-insulation.webp",
@@ -1050,7 +1050,7 @@ const galleryJobs = [
   },
   {
     title: "Commercial Rooftop Unit Maintenance",
-    location: "West Palm Beach, FL",
+    location: "Temple, TX",
     category: "maintenance",
     categoryLabel: "Maintenance",
     image: "/images/gallery-commercial-hvac.webp",
@@ -1058,7 +1058,7 @@ const galleryJobs = [
   },
   {
     title: "Smart Thermostat Installation",
-    location: "Lake Worth Beach, FL",
+    location: "Belton, TX",
     category: "maintenance",
     categoryLabel: "Maintenance",
     image: "/images/gallery-smart-thermostat.webp",
@@ -1066,7 +1066,7 @@ const galleryJobs = [
   },
   {
     title: "Emergency AC Condenser Tune-up",
-    location: "Wellington, FL",
+    location: "Killeen, TX",
     category: "ac-install",
     categoryLabel: "AC Installation",
     image: "/images/gallery-compressor-tuneup.webp",

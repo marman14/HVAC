@@ -9,16 +9,24 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Service Area",
-  description: `See the cities served by ${siteConfig.name} in Palm Beach County and South Florida.`,
+  description: `See the cities served by ${siteConfig.name} in ${siteConfig.serviceAreaLabel}.`,
 };
 
 export default function ServiceAreaPage() {
+  const locationLabel = [
+    siteConfig.address.street,
+    [siteConfig.address.city, siteConfig.address.state].filter(Boolean).join(", "),
+    siteConfig.address.zip,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <section className="px-5 py-32 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Service area"
-          title="HVAC service in Delray Beach and Palm Beach County"
+          title={`HVAC service in ${siteConfig.address.city} and ${siteConfig.county}`}
           subtitle={siteConfig.serviceAreaLabel}
         />
         <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
@@ -31,15 +39,12 @@ export default function ServiceAreaPage() {
                 <MapPin className="mt-1 text-orange" size={22} />
                 <div>
                   <h2 className="text-xl font-black text-navy">{siteConfig.name}</h2>
-                  <p className="mt-2 text-muted">
-                    {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.state}{" "}
-                    {siteConfig.address.zip}
-                  </p>
+                  <p className="mt-2 text-muted">{locationLabel}</p>
                 </div>
               </div>
               <div className="mt-4 flex items-center gap-3 text-sm font-semibold text-navy">
                 <Clock size={18} className="text-orange" />
-                Open 24 hours
+                {siteConfig.hours.join(" · ")}
               </div>
             </div>
 

@@ -16,8 +16,8 @@ export default function PrivacyPolicyPage() {
         <div className="mt-8 space-y-6 leading-8 text-muted">
           <p>
             {siteConfig.name} respects your privacy. This policy explains how contact details
-            submitted through the website may be used to respond to HVAC service requests in Delray
-            Beach and Palm Beach County.
+            submitted through the website may be used to respond to HVAC service requests in{" "}
+            {siteConfig.serviceAreaLabel}.
           </p>
           <p>
             Information submitted through forms may include name, phone number, email address,

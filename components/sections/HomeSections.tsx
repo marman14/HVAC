@@ -34,10 +34,10 @@ import { services } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
 
 const trustBadges = [
-  { label: "Open 24 Hours", icon: "🕐" },
-  { label: "Palm Beach County", icon: "📍" },
+  { label: "Closes 5 PM", icon: "🕐" },
+  { label: "Waco & Central TX", icon: "📍" },
   { label: "Licensed & Insured", icon: "✅" },
-  { label: "Same-Day Service", icon: "⚡" },
+  { label: "Install · Service · Repair", icon: "⚡" },
 ];
 
 const whyChooseUs = [
@@ -72,7 +72,7 @@ const steps = [
     number: "01",
     icon: Phone,
     title: "Call or Book Online",
-    text: "Reach us by phone, text, or our online form — 24/7. We confirm your appointment within 15 minutes.",
+    text: "Reach us by phone, text, or our online form. We confirm your appointment quickly during business hours.",
   },
   {
     number: "02",
@@ -230,26 +230,26 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-full border border-orange/40 bg-orange/10 px-4 py-2 backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-orange animate-pulse" />
             <p className="text-sm font-bold text-white/90">
-              🔧 {siteConfig.name} | Delray Beach HVAC Contractor
+              🔧 {siteConfig.name} | Waco HVAC Contractor
             </p>
           </div>
 
           <h1 className="mt-7 max-w-3xl text-5xl font-black leading-[1.05] tracking-tight md:text-6xl lg:text-7xl text-balance">
-            24/7{" "}
-            <span className="shimmer-text">HVAC Service</span> in Delray Beach
-            & Palm Beach County
+            AC & Heating{" "}
+            <span className="shimmer-text">Install, Service & Repair</span> in Waco
+            & Central Texas
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65 md:text-xl">
-            Iris Cooling LLC handles AC repair, installation, maintenance, and
-            emergency cooling calls across South Florida. Call {siteConfig.phone}{" "}
-            anytime for fast local help.
+            {siteConfig.name} is a licensed and insured HVAC/R contractor for
+            residential and commercial jobs. Call, text, or email {siteConfig.phone}{" "}
+            today. Financing available.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href={siteConfig.phoneHref} size="lg" className="gap-2">
               <Phone size={18} />
-              Call Now — 24/7 Emergency
+              Call {siteConfig.phone}
             </ButtonLink>
             <ButtonLink href="#contact" variant="outline" size="lg">
               Get a Free Estimate
@@ -281,7 +281,7 @@ export function HeroSection() {
                 <p className="text-xs font-black uppercase tracking-[0.2em] text-orange">
                   Emergency Service
                 </p>
-                <p className="text-sm font-semibold text-muted">Available 24/7</p>
+                <p className="text-sm font-semibold text-muted">Call, text, or email</p>
               </div>
             </div>
 
@@ -344,14 +344,14 @@ export function SocialProofStrip() {
         <p className="text-sm font-semibold text-muted">
           Serving homeowners and businesses across{" "}
           <span className="font-black text-navy">{siteConfig.county}</span> with
-          24-hour HVAC support
+          licensed HVAC install, service, and repair
         </p>
         <div className="flex flex-wrap gap-2">
           {[
-            { label: "📍 Delray Beach, FL", color: "text-navy bg-grey border-slate-200" },
-            { label: "🕐 Open 24 Hours", color: "text-orange bg-orange/10 border-orange/20" },
+            { label: "📍 Waco, TX", color: "text-navy bg-grey border-slate-200" },
+            { label: "🕐 Closes 5 PM", color: "text-orange bg-orange/10 border-orange/20" },
             { label: "❄️ AC Repair & Install", color: "text-blue-700 bg-blue-50 border-blue-200" },
-            { label: "📞 (561) 584-3940", color: "text-green-700 bg-green-50 border-green-200" },
+            { label: `📞 ${siteConfig.phone}`, color: "text-green-700 bg-green-50 border-green-200" },
           ].map((item) => (
             <span
               key={item.label}
@@ -648,10 +648,10 @@ export function ReviewsSection() {
     <AnimatedSection className="relative overflow-hidden bg-grey/50 px-5 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          eyebrow="Why call Iris Cooling"
+          eyebrow={`Why call ${siteConfig.shortName}`}
           title="Local HVAC Help"
           accentTitle="When You Need It"
-          subtitle="Fast phone support, 24-hour availability, and clear service across Delray Beach and Palm Beach County."
+          subtitle={`Fast phone support and clear service across ${siteConfig.serviceAreaLabel}.`}
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -902,13 +902,35 @@ export function ContactSection() {
                   <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-muted">Location</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted">Service Area</p>
                   <p className="text-base font-black text-navy">
-                    {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.state}{" "}
-                    {siteConfig.address.zip}
+                    {[
+                      siteConfig.address.street,
+                      [siteConfig.address.city, siteConfig.address.state].filter(Boolean).join(", "),
+                      siteConfig.address.zip,
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
                   </p>
                 </div>
               </div>
+
+              {siteConfig.email ? (
+                <div className="group flex items-center gap-4 rounded-3xl border border-slate-100 bg-white p-5 shadow-card transition hover:border-orange/20 hover:shadow-hover">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-orange-gradient shadow-glow-sm">
+                    <MessageCircle size={20} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-wider text-muted">Email</p>
+                    <a
+                      href={`mailto:${siteConfig.email}`}
+                      className="text-base font-black text-navy hover:text-orange transition-colors break-all"
+                    >
+                      {siteConfig.email}
+                    </a>
+                  </div>
+                </div>
+              ) : null}
 
               {/* Hours */}
               <div className="rounded-3xl border border-slate-100 bg-grey/60 p-5">
@@ -924,14 +946,14 @@ export function ContactSection() {
               </div>
             </div>
 
-            {/* Emergency badge */}
-            <div className="mt-5 flex items-center gap-3 rounded-3xl border border-red-100 bg-red-50 p-5">
+            {/* Contact CTA */}
+            <div className="mt-5 flex items-center gap-3 rounded-3xl border border-orange/20 bg-orange/5 p-5">
               <span className="relative flex h-3 w-3 shrink-0">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
-                <span className="relative inline-flex h-3 w-3 rounded-full bg-red-500" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange opacity-75" />
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-orange" />
               </span>
-              <p className="text-sm font-black text-red-700">
-                Emergency? We answer 24/7 — no wait, no automated menu.
+              <p className="text-sm font-black text-navy">
+                Call, text, or email us today. Financing available on request.
               </p>
             </div>
           </div>

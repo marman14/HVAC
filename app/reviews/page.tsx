@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Reviews",
-  description: `See how ${siteConfig.name} serves Delray Beach and Palm Beach County with 24/7 HVAC repair and installation.`,
+  description: `See how ${siteConfig.name} serves ${siteConfig.serviceAreaLabel} with HVAC install, service, and repair.`,
 };
 
 export default function ReviewsPage() {
@@ -17,8 +17,8 @@ export default function ReviewsPage() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Customer experience"
-          title="Trusted local HVAC help in Palm Beach County"
-          subtitle={`${siteConfig.name} is listed on Google Maps with ${siteConfig.googleRating.count} reviews. For the fastest response, call ${siteConfig.phone} any time.`}
+          title={`Trusted local HVAC help in ${siteConfig.county}`}
+          subtitle={`${siteConfig.name} is listed on Google with a ${siteConfig.googleRating.value} rating from ${siteConfig.googleRating.count} review${siteConfig.googleRating.count === 1 ? "" : "s"}. For the fastest response, call ${siteConfig.phone}.`}
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -35,9 +35,9 @@ export default function ReviewsPage() {
           <p className="text-sm font-black uppercase tracking-[0.2em] text-orange">
             Google Business Profile
           </p>
-          <h2 className="mt-4 text-3xl font-black">Find Iris Cooling LLC on Google Maps</h2>
+          <h2 className="mt-4 text-3xl font-black">Find {siteConfig.name} on Google Maps</h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            View directions, business hours, and public Google reviews for our Delray Beach HVAC
+            View business hours and public Google reviews for our {siteConfig.address.city} HVAC
             service.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

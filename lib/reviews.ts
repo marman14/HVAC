@@ -1,7 +1,7 @@
 export const serviceCommitments = [
   {
-    title: "24/7 Emergency Response",
-    text: "Cooling problems do not wait for business hours. Call Iris Cooling LLC anytime for urgent HVAC help in Palm Beach County.",
+    title: "Fast Local Response",
+    text: "Cooling and heating problems do not wait. Call Alonso Quality Air LLC for HVAC help across the Waco and Central Texas area.",
   },
   {
     title: "Clear Communication",
@@ -9,6 +9,6 @@ export const serviceCommitments = [
   },
   {
     title: "Residential and Commercial HVAC",
-    text: "From home AC repairs to commercial cooling service, Iris Cooling LLC handles installation, maintenance, and emergency calls.",
+    text: "From home AC repairs to commercial cooling service, Alonso Quality Air LLC handles installation, maintenance, and repair calls.",
   },
 ];

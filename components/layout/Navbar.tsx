@@ -96,7 +96,7 @@ export function Navbar() {
             className="inline-flex items-center gap-2 rounded-full bg-orange-gradient px-5 py-2.5 text-sm font-black text-white shadow-glow-sm transition-all duration-300 hover:shadow-glow hover:-translate-y-0.5 border border-orange/20"
           >
             <Phone size={15} />
-            Call Now — 24/7
+            Call Now
           </a>
         </div>
 
@@ -163,7 +163,7 @@ export function Navbar() {
           </a>
 
           <p className="mt-4 text-center text-sm text-white/40">
-            Available 24/7 for emergencies
+            Call, text, or email for service
           </p>
         </div>
       ) : null}

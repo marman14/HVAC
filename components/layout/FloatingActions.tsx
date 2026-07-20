@@ -45,7 +45,7 @@ export function FloatingActions() {
         </a>
       ) : null}
 
-      {/* 24/7 phone pill */}
+      {/* Phone pill */}
       <a
         href={siteConfig.phoneHref}
         className="fixed bottom-6 right-5 z-40 hidden items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-black text-navy shadow-glass transition-all duration-300 hover:-translate-y-1 hover:shadow-xl lg:inline-flex border border-slate-100"
@@ -55,7 +55,7 @@ export function FloatingActions() {
           <span className="relative inline-flex h-2 w-2 rounded-full bg-orange" />
         </span>
         <Phone size={15} className="text-orange" />
-        24/7 Emergency
+        Call {siteConfig.phone}
       </a>
     </>
   );

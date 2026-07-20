@@ -29,13 +29,13 @@ export const services: Service[] = [
     eyebrow: "Same-day cooling help",
     description: "Fast diagnosis and repair for all major AC brands.",
     longDescription:
-      "When South Florida heat hits hard, our technicians find the issue quickly, explain your options clearly, and complete most cooling repairs the same day.",
+      "When Central Texas heat hits hard, our technicians find the issue quickly, explain your options clearly, and complete most cooling repairs the same day.",
     icon: Wind,
-    highlights: ["24/7 emergency dispatch", "Upfront repair pricing", "All brands serviced"],
+    highlights: ["Fast local dispatch", "Upfront repair pricing", "All brands serviced"],
     faqs: [
       {
         question: "How quickly can you repair my AC?",
-        answer: "Most calls are scheduled the same day, with emergency appointments available 24/7.",
+        answer: "Most calls are scheduled the same day when capacity allows. Call or text for the next available window.",
       },
       {
         question: "Do you repair older systems?",
@@ -74,8 +74,8 @@ export const services: Service[] = [
     highlights: ["Gas and electric systems", "Safety checks included", "Emergency heating service"],
     faqs: [
       {
-        question: "Do Florida homes need furnace service?",
-        answer: "Yes. Even seasonal systems need safe ignition, airflow, and control checks.",
+        question: "Do Texas homes need furnace service?",
+        answer: "Yes. Seasonal systems still need safe ignition, airflow, and control checks.",
       },
       {
         question: "Can you fix short cycling?",
@@ -109,13 +109,13 @@ export const services: Service[] = [
     eyebrow: "Efficient year-round comfort",
     description: "Heat pump repair, replacement, and seasonal tune-ups.",
     longDescription:
-      "Heat pumps are ideal for many Palm Beach County homes. We maintain, repair, and install systems that cool efficiently and provide dependable heating when temperatures dip.",
+      "Heat pumps are ideal for many Central Texas homes. We maintain, repair, and install systems that cool efficiently and provide dependable heating when temperatures dip.",
     icon: Thermometer,
     highlights: ["Repair and replacement", "Seasonal tune-ups", "Efficiency optimization"],
     faqs: [
       {
-        question: "Are heat pumps good for Florida?",
-        answer: "Yes. Florida's climate makes heat pumps an efficient year-round comfort option.",
+        question: "Are heat pumps good for Texas?",
+        answer: "Yes. Texas climates make heat pumps an efficient year-round comfort option for many homes.",
       },
       {
         question: "How often should I service a heat pump?",
@@ -126,12 +126,12 @@ export const services: Service[] = [
   {
     slug: "emergency-hvac",
     title: "Emergency HVAC",
-    eyebrow: "24/7 urgent response",
+    eyebrow: "Urgent response",
     description: "Fast help when heating or cooling cannot wait.",
     longDescription:
-      "No cooling, strange electrical smells, leaking equipment, or no heat overnight? Our emergency dispatch keeps homeowners moving with real response windows.",
+      "No cooling, strange electrical smells, leaking equipment, or no heat? Call or text and we will get you on the schedule with a clear response window.",
     icon: AlertTriangle,
-    highlights: ["Calls answered 24/7", "Priority scheduling", "Clear arrival updates"],
+    highlights: ["Priority scheduling", "Clear arrival updates", "Call, text, or email"],
     faqs: [
       {
         question: "What counts as an emergency?",

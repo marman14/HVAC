@@ -18,17 +18,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | 24/7 HVAC Repair in Delray Beach, FL`,
+    default: `${siteConfig.name} | HVAC Install, Service & Repair in Waco, TX`,
     template: `%s | ${siteConfig.shortName}`,
   },
   description: siteConfig.description,
   keywords: [
-    "Iris Cooling LLC",
-    "HVAC Delray Beach",
-    "AC repair Palm Beach County",
-    "emergency HVAC Delray Beach",
-    "AC installation Boca Raton",
-    "24 hour HVAC Florida",
+    "Alonso Quality Air LLC",
+    "HVAC Waco TX",
+    "AC repair Waco",
+    "heating and cooling Central Texas",
+    "AC installation Temple",
+    "TACLA141376R",
   ],
   openGraph: {
     title: siteConfig.name,

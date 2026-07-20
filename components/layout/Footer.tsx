@@ -49,8 +49,8 @@ export function Footer() {
           </Link>
 
           <p className="mt-5 max-w-xs leading-7 text-white/60 text-sm">
-            {siteConfig.name} provides HVAC repair, replacement, air quality, and
-            maintenance service across {siteConfig.county}. Open 24 hours.
+            {siteConfig.name} provides HVAC install, service, and repair across{" "}
+            {siteConfig.county}. Licensed, insured, residential and commercial.
           </p>
 
           {/* Contact quick-links */}
@@ -73,8 +73,13 @@ export function Footer() {
             ) : null}
             <span className="flex items-start gap-2.5 text-sm text-white/70">
               <MapPin size={15} className="text-orange mt-0.5 shrink-0" />
-              {siteConfig.address.street}, {siteConfig.address.city},{" "}
-              {siteConfig.address.state} {siteConfig.address.zip}
+              {[
+                siteConfig.address.street,
+                [siteConfig.address.city, siteConfig.address.state].filter(Boolean).join(", "),
+                siteConfig.address.zip,
+              ]
+                .filter(Boolean)
+                .join(" ")}
             </span>
           </div>
 
@@ -82,13 +87,18 @@ export function Footer() {
           <div className="mt-7 flex gap-2">
             {[
               { href: siteConfig.socials.facebook, label: "FB" },
+              { href: siteConfig.socials.youtube, label: "YT" },
               { href: siteConfig.socials.instagram, label: "IG" },
               { href: siteConfig.socials.google, label: "G" },
               { href: siteConfig.socials.yelp, label: "Y" },
-            ].map((s) => (
+            ]
+              .filter((s) => Boolean(s.href))
+              .map((s) => (
               <a
                 key={s.label}
                 href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-xs font-black text-white/60 transition hover:border-orange/40 hover:bg-orange/10 hover:text-orange"
               >
                 {s.label}
@@ -156,8 +166,8 @@ export function Footer() {
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-orange" />
             </span>
             <div>
-              <p className="text-xs font-black text-orange">Emergency Service</p>
-              <p className="text-xs text-white/60">Available 24/7</p>
+              <p className="text-xs font-black text-orange">Need Service?</p>
+              <p className="text-xs text-white/60">Call, text, or email</p>
             </div>
           </a>
         </div>

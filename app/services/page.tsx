@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "HVAC Services",
-  description: `${siteConfig.name} offers AC repair, installation, emergency HVAC, duct cleaning, and maintenance in Delray Beach and Palm Beach County.`,
+  description: `${siteConfig.name} offers AC repair, installation, emergency HVAC, duct cleaning, and maintenance in ${siteConfig.serviceAreaLabel}.`,
 };
 
 export default function ServicesPage() {

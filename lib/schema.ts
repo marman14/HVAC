@@ -3,20 +3,25 @@ import { type Service } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
 
 export function localBusinessSchema() {
+  const sameAs = Object.values(siteConfig.socials).filter(Boolean);
+
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HVACBusiness"],
     name: siteConfig.name,
     url: siteConfig.url,
     telephone: siteConfig.phone,
+    email: siteConfig.email || undefined,
     priceRange: "$$",
     image: `${siteConfig.url}/og-image.jpg`,
     address: {
       "@type": "PostalAddress",
-      streetAddress: siteConfig.address.street,
+      ...(siteConfig.address.street
+        ? { streetAddress: siteConfig.address.street }
+        : {}),
       addressLocality: siteConfig.address.city,
       addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
+      ...(siteConfig.address.zip ? { postalCode: siteConfig.address.zip } : {}),
       addressCountry: siteConfig.address.country,
     },
     geo: {
@@ -26,7 +31,7 @@ export function localBusinessSchema() {
     },
     areaServed: cities.map((city) => ({
       "@type": "City",
-      name: `${city}, FL`,
+      name: `${city}, TX`,
     })),
     openingHoursSpecification: [
       {
@@ -40,11 +45,10 @@ export function localBusinessSchema() {
           "Saturday",
           "Sunday",
         ],
-        opens: "00:00",
-        closes: "23:59",
+        closes: "17:00",
       },
     ],
-    sameAs: [siteConfig.socials.google],
+    sameAs,
   };
 }
 
