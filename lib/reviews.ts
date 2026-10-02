@@ -1,7 +1,7 @@
 export const serviceCommitments = [
   {
     title: "Fast Local Response",
-    text: "Cooling and heating problems do not wait. Call Alonso Quality Air LLC for HVAC help across the Waco and Central Texas area.",
+    text: "Cooling and heating problems do not wait. Call Precise Air Conditioning Corp for HVAC help across Hialeah and South Florida.",
   },
   {
     title: "Clear Communication",
@@ -9,6 +9,6 @@ export const serviceCommitments = [
   },
   {
     title: "Residential and Commercial HVAC",
-    text: "From home AC repairs to commercial cooling service, Alonso Quality Air LLC handles installation, maintenance, and repair calls.",
+    text: "From home AC repairs to commercial cooling service, Precise Air Conditioning Corp handles installation, maintenance, and repair calls.",
   },
 ];

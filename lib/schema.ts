@@ -31,7 +31,7 @@ export function localBusinessSchema() {
     },
     areaServed: cities.map((city) => ({
       "@type": "City",
-      name: `${city}, TX`,
+      name: `${city}, ${siteConfig.address.state}`,
     })),
     openingHoursSpecification: [
       {

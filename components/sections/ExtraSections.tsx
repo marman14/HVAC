@@ -887,7 +887,7 @@ const faqs = [
   },
   {
     q: "Are your technicians licensed and insured?",
-    a: "Every technician is fully licensed, insured, and background-checked. You'll always know who is coming to your home before they arrive. Our Texas HVAC license is TACLA141376R.",
+    a: "Every technician is fully licensed, insured, and background-checked. You'll always know who is coming to your home before they arrive.",
   },
   {
     q: "How often should I service my HVAC system?",
@@ -986,9 +986,9 @@ export function FAQSection() {
    6. TRUST & CREDENTIAL STRIP
    ───────────────────────────────────────────────────────────────────── */
 const credentials = [
-  { icon: Clock, label: "Closes 5 PM", sub: "Call for hours" },
+  { icon: Clock, label: "Mon-Fri 7:30-5:30", sub: "Sat 7:30-2:30" },
   { icon: Shield, label: "Licensed & Insured", sub: siteConfig.county },
-  { icon: MapPin, label: "Waco, TX", sub: "Local contractor" },
+  { icon: MapPin, label: "Hialeah, FL", sub: "Local contractor" },
   { icon: Percent, label: "Financing", sub: "Call or email" },
   { icon: Zap, label: "Install & Repair", sub: "Residential & commercial" },
   { icon: ThumbsUp, label: "Upfront Pricing", sub: "Before work starts" },
@@ -1026,23 +1026,23 @@ export function TrustStrip() {
 const galleryJobs = [
   {
     title: "Trane 5-Ton AC Installation",
-    location: "Waco, TX",
+    location: "Hialeah, FL",
     category: "ac-install",
     categoryLabel: "AC Installation",
     image: "/images/gallery-ac-install.webp",
-    description: "Replaced an aging, inefficient 10 SEER condenser unit with a high-efficiency Trane 5-Ton 18 SEER cooling system. The project involved laying a new level composite pad, replacing the electrical disconnect box, and installing premium copper pipes with clean UV-resistant insulation jacket.",
+    description: "Replaced an aging, inefficient unit with a high-efficiency Trane 5-Ton 18 SEER cooling system. The project involved laying a new level composite pad, replacing the electrical disconnect box, and installing premium copper pipes with clean UV-resistant insulation jacket.",
   },
   {
     title: "Furnace Control Board & Tune-up",
-    location: "Woodway, TX",
+    location: "Miami, FL",
     category: "heating",
     categoryLabel: "Heating",
     image: "/images/gallery-furnace-service.webp",
-    description: "Diagnosed a furnace short-cycling issue. Replaced a failing control board relays, cleaned the flame sensor, and tested gas valve pressure levels to ensure safe, efficient heating operation for the colder months.",
+    description: "Diagnosed a system short-cycling issue. Replaced a failing control board relay, cleaned the flame sensor, and tested gas valve pressure levels to ensure safe, efficient heating operation.",
   },
   {
     title: "Attic Ductwork Replacement",
-    location: "Hewitt, TX",
+    location: "Doral, FL",
     category: "ductwork",
     categoryLabel: "Ductwork",
     image: "/images/gallery-duct-insulation.webp",
@@ -1050,7 +1050,7 @@ const galleryJobs = [
   },
   {
     title: "Commercial Rooftop Unit Maintenance",
-    location: "Temple, TX",
+    location: "Miami Lakes, FL",
     category: "maintenance",
     categoryLabel: "Maintenance",
     image: "/images/gallery-commercial-hvac.webp",
@@ -1058,7 +1058,7 @@ const galleryJobs = [
   },
   {
     title: "Smart Thermostat Installation",
-    location: "Belton, TX",
+    location: "Coral Gables, FL",
     category: "maintenance",
     categoryLabel: "Maintenance",
     image: "/images/gallery-smart-thermostat.webp",
@@ -1066,7 +1066,7 @@ const galleryJobs = [
   },
   {
     title: "Emergency AC Condenser Tune-up",
-    location: "Killeen, TX",
+    location: "Miramar, FL",
     category: "ac-install",
     categoryLabel: "AC Installation",
     image: "/images/gallery-compressor-tuneup.webp",

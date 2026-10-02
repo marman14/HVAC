@@ -18,17 +18,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | HVAC Install, Service & Repair in Waco, TX`,
+    default: `${siteConfig.name} | HVAC Install, Service & Repair in ${siteConfig.address.city}, ${siteConfig.address.state}`,
     template: `%s | ${siteConfig.shortName}`,
   },
   description: siteConfig.description,
   keywords: [
-    "Alonso Quality Air LLC",
-    "HVAC Waco TX",
-    "AC repair Waco",
-    "heating and cooling Central Texas",
-    "AC installation Temple",
-    "TACLA141376R",
+    siteConfig.name,
+    "HVAC Hialeah FL",
+    "AC repair Hialeah",
+    "heating and cooling Miami FL",
+    "AC installation Hialeah",
+    "South Florida HVAC contractor",
   ],
   openGraph: {
     title: siteConfig.name,

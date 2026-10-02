@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="grid gap-5">
             {[
               "Licensed & insured HVAC/R contractor",
-              `License ${siteConfig.license.replace("Texas HVAC License ", "")}`,
+              siteConfig.license,
               "Residential and commercial install, service, and repair",
               "Financing available. Call or email for details",
             ].map((item) => (

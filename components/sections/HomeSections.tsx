@@ -34,8 +34,8 @@ import { services } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
 
 const trustBadges = [
-  { label: "Closes 5 PM", icon: "🕐" },
-  { label: "Waco & Central TX", icon: "📍" },
+  { label: "Mon-Fri 7:30 AM-5:30 PM", icon: "🕐" },
+  { label: "Hialeah & South FL", icon: "📍" },
   { label: "Licensed & Insured", icon: "✅" },
   { label: "Install · Service · Repair", icon: "⚡" },
 ];
@@ -230,14 +230,14 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-full border border-orange/40 bg-orange/10 px-4 py-2 backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-orange animate-pulse" />
             <p className="text-sm font-bold text-white/90">
-              🔧 {siteConfig.name} | Waco HVAC Contractor
+              🔧 {siteConfig.name} | Hialeah HVAC Contractor
             </p>
           </div>
 
           <h1 className="mt-7 max-w-3xl text-5xl font-black leading-[1.05] tracking-tight md:text-6xl lg:text-7xl text-balance">
             AC & Heating{" "}
-            <span className="shimmer-text">Install, Service & Repair</span> in Waco
-            & Central Texas
+            <span className="shimmer-text">Install, Service & Repair</span> in Hialeah
+            & South Florida
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65 md:text-xl">
@@ -348,7 +348,7 @@ export function SocialProofStrip() {
         </p>
         <div className="flex flex-wrap gap-2">
           {[
-            { label: "📍 Waco, TX", color: "text-navy bg-grey border-slate-200" },
+            { label: "📍 Hialeah, FL", color: "text-navy bg-grey border-slate-200" },
             { label: "🕐 Closes 5 PM", color: "text-orange bg-orange/10 border-orange/20" },
             { label: "❄️ AC Repair & Install", color: "text-blue-700 bg-blue-50 border-blue-200" },
             { label: `📞 ${siteConfig.phone}`, color: "text-green-700 bg-green-50 border-green-200" },
