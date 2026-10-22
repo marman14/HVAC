@@ -26,15 +26,15 @@ export default function AboutPage() {
           align="left"
           eyebrow="About us"
           title="Local HVAC service built around clear communication"
-          subtitle={`${siteConfig.name} is a licensed and insured AC and heating contractor serving ${siteConfig.serviceAreaLabel}. We offer install, service, and repair for residential and commercial customers.`}
+          subtitle={`${siteConfig.name} is an independent, owner-operated licensed HVAC contractor serving ${siteConfig.serviceAreaLabel}. Founded by Anthony and Ronald in 2017, we offer install, service, and repair for residential and commercial customers.`}
         />
         <div className="rounded-[2rem] bg-grey p-8">
           <div className="grid gap-5">
             {[
-              "Licensed & insured HVAC/R contractor",
-              siteConfig.license,
+              "Licensed & insured HVAC contractor — State License #1032964",
+              "Independent, owner-operated company founded by Anthony & Ronald",
+              "Serving Corning, CA and Tehama County since 2017",
               "Residential and commercial install, service, and repair",
-              "Financing available. Call or email for details",
             ].map((item) => (
               <div key={item} className="flex gap-3">
                 <CheckCircle2 className="mt-1 shrink-0 text-orange" size={22} />

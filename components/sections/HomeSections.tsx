@@ -34,9 +34,9 @@ import { services } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
 
 const trustBadges = [
-  { label: "Mon-Fri 7:30 AM-5:30 PM", icon: "🕐" },
-  { label: "Hialeah & South FL", icon: "📍" },
-  { label: "Licensed & Insured", icon: "✅" },
+  { label: "PT / 8:00 PM-11:00 PM PKT", icon: "🕐" },
+  { label: "Corning & Tehama County", icon: "📍" },
+  { label: "State License #1032964", icon: "✅" },
   { label: "Install · Service · Repair", icon: "⚡" },
 ];
 
@@ -44,8 +44,8 @@ const whyChooseUs = [
   {
     icon: ShieldCheck,
     title: "Licensed & Insured",
-    text: "Every technician is fully licensed, insured, and background-checked before stepping into your home.",
-    stat: "100% verified",
+    text: "California State Contractor License #1032964. Established 2017, owner-operated independent HVAC experts.",
+    stat: "Lic #1032964",
   },
   {
     icon: DollarSign,
@@ -230,14 +230,14 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-full border border-orange/40 bg-orange/10 px-4 py-2 backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-orange animate-pulse" />
             <p className="text-sm font-bold text-white/90">
-              🔧 {siteConfig.name} | Hialeah HVAC Contractor
+              🔧 {siteConfig.name} | Corning, CA HVAC Contractor
             </p>
           </div>
 
           <h1 className="mt-7 max-w-3xl text-5xl font-black leading-[1.05] tracking-tight md:text-6xl lg:text-7xl text-balance">
             AC & Heating{" "}
-            <span className="shimmer-text">Install, Service & Repair</span> in Hialeah
-            & South Florida
+            <span className="shimmer-text">Install, Service & Repair</span> in Corning, CA
+            & Tehama County
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65 md:text-xl">
@@ -348,8 +348,8 @@ export function SocialProofStrip() {
         </p>
         <div className="flex flex-wrap gap-2">
           {[
-            { label: "📍 Hialeah, FL", color: "text-navy bg-grey border-slate-200" },
-            { label: "🕐 Closes 5 PM", color: "text-orange bg-orange/10 border-orange/20" },
+            { label: "📍 Corning, CA", color: "text-navy bg-grey border-slate-200" },
+            { label: "🕐 PT / 8PM-11PM PKT", color: "text-orange bg-orange/10 border-orange/20" },
             { label: "❄️ AC Repair & Install", color: "text-blue-700 bg-blue-50 border-blue-200" },
             { label: `📞 ${siteConfig.phone}`, color: "text-green-700 bg-green-50 border-green-200" },
           ].map((item) => (

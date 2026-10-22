@@ -24,11 +24,13 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     siteConfig.name,
-    "HVAC Hialeah FL",
-    "AC repair Hialeah",
-    "heating and cooling Miami FL",
-    "AC installation Hialeah",
-    "South Florida HVAC contractor",
+    "HVAC Corning CA",
+    "AC repair Corning CA",
+    "heating and cooling Tehama County",
+    "AC installation Corning CA",
+    "California HVAC contractor",
+    "State License 1032964",
+    "Dossie Heating And Air Conditioning",
   ],
   openGraph: {
     title: siteConfig.name,

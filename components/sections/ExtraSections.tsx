@@ -986,9 +986,9 @@ export function FAQSection() {
    6. TRUST & CREDENTIAL STRIP
    ───────────────────────────────────────────────────────────────────── */
 const credentials = [
-  { icon: Clock, label: "Mon-Fri 7:30-5:30", sub: "Sat 7:30-2:30" },
-  { icon: Shield, label: "Licensed & Insured", sub: siteConfig.county },
-  { icon: MapPin, label: "Hialeah, FL", sub: "Local contractor" },
+  { icon: Clock, label: "PT / 8PM-11PM PKT", sub: "Operating Hours" },
+  { icon: Shield, label: "State Lic #1032964", sub: "Est. 2017" },
+  { icon: MapPin, label: "Corning, CA", sub: "Tehama County" },
   { icon: Percent, label: "Financing", sub: "Call or email" },
   { icon: Zap, label: "Install & Repair", sub: "Residential & commercial" },
   { icon: ThumbsUp, label: "Upfront Pricing", sub: "Before work starts" },
@@ -1026,7 +1026,7 @@ export function TrustStrip() {
 const galleryJobs = [
   {
     title: "Trane 5-Ton AC Installation",
-    location: "Hialeah, FL",
+    location: "Corning, CA",
     category: "ac-install",
     categoryLabel: "AC Installation",
     image: "/images/gallery-ac-install.webp",
@@ -1034,7 +1034,7 @@ const galleryJobs = [
   },
   {
     title: "Furnace Control Board & Tune-up",
-    location: "Miami, FL",
+    location: "Red Bluff, CA",
     category: "heating",
     categoryLabel: "Heating",
     image: "/images/gallery-furnace-service.webp",
@@ -1042,7 +1042,7 @@ const galleryJobs = [
   },
   {
     title: "Attic Ductwork Replacement",
-    location: "Doral, FL",
+    location: "Tehama, CA",
     category: "ductwork",
     categoryLabel: "Ductwork",
     image: "/images/gallery-duct-insulation.webp",
@@ -1050,7 +1050,7 @@ const galleryJobs = [
   },
   {
     title: "Commercial Rooftop Unit Maintenance",
-    location: "Miami Lakes, FL",
+    location: "Corning, CA",
     category: "maintenance",
     categoryLabel: "Maintenance",
     image: "/images/gallery-commercial-hvac.webp",
@@ -1058,7 +1058,7 @@ const galleryJobs = [
   },
   {
     title: "Smart Thermostat Installation",
-    location: "Coral Gables, FL",
+    location: "Los Molinos, CA",
     category: "maintenance",
     categoryLabel: "Maintenance",
     image: "/images/gallery-smart-thermostat.webp",
@@ -1066,7 +1066,7 @@ const galleryJobs = [
   },
   {
     title: "Emergency AC Condenser Tune-up",
-    location: "Miramar, FL",
+    location: "Gerber, CA",
     category: "ac-install",
     categoryLabel: "AC Installation",
     image: "/images/gallery-compressor-tuneup.webp",
