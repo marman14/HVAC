@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Install, Service & Repair",
   description:
     "Dossie Heating And Air Conditioning is an independent, owner-operated licensed HVAC contractor (State License #1032964, Est. 2017) serving residential and commercial customers in Corning, CA and surrounding Tehama County areas.",
-  url: "https://dossie-hvac-sigma-pi.vercel.app",
+  url: "https://dossie-hvac.vercel.app",
   phone: "(530) 680-2150",
   phoneHref: "tel:+15306802150",
   smsHref: "sms:+15306802150",
