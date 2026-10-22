@@ -912,10 +912,10 @@ export function FAQSection() {
             />
             <div className="mt-8 grid gap-3">
               {[
-                { icon: ThumbsUp, text: "4,800+ satisfied jobs completed" },
-                { icon: Star, text: "5.0 average Google rating" },
-                { icon: BadgeCheck, text: "NATE Certified & BBB Accredited" },
-                { icon: CalendarClock, text: "Same-day scheduling available" },
+                { icon: ThumbsUp, text: "Owner-Operator Independent HVAC Team" },
+                { icon: BadgeCheck, text: "State Contractor License #1032964" },
+                { icon: CalendarClock, text: "Serving Corning & Tehama County Since 2017" },
+                { icon: Shield, text: "Founders Anthony & Ronald Dedicated Service" },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

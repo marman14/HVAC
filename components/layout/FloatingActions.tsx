@@ -1,19 +1,11 @@
 "use client";
 
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 import { siteConfig } from "@/lib/site-config";
 
 export function FloatingActions() {
-  const [showWhatsApp, setShowWhatsApp] = useState(false);
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => setShowWhatsApp(true), 3000);
-    return () => window.clearTimeout(timer);
-  }, []);
-
   return (
     <>
       {/* Emergency side tab */}
@@ -26,24 +18,6 @@ export function FloatingActions() {
           🚨 Emergency
         </span>
       </Link>
-
-      {/* WhatsApp bubble */}
-      {showWhatsApp ? (
-        <a
-          href={siteConfig.whatsappHref}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Chat on WhatsApp"
-          className="fixed bottom-24 right-5 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-green-900/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl md:inline-flex"
-          style={{ animation: "slide-in-right 0.5s cubic-bezier(0.34,1.56,0.64,1) both" }}
-        >
-          <MessageCircle size={26} />
-          {/* Tooltip */}
-          <span className="absolute right-16 whitespace-nowrap rounded-xl bg-white px-3 py-1.5 text-xs font-black text-[#25D366] shadow-lg opacity-0 transition-opacity group-hover:opacity-100 pointer-events-none">
-            Chat with us
-          </span>
-        </a>
-      ) : null}
 
       {/* Phone pill */}
       <a

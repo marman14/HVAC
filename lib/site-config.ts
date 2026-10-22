@@ -4,11 +4,10 @@ export const siteConfig = {
   tagline: "Install, Service & Repair",
   description:
     "Dossie Heating And Air Conditioning is an independent, owner-operated licensed HVAC contractor (State License #1032964, Est. 2017) serving residential and commercial customers in Corning, CA and surrounding Tehama County areas.",
-  url: "https://dossie-hvac-sigma.vercel.app",
+  url: "https://dossie-hvac-sigma-pi.vercel.app",
   phone: "(530) 680-2150",
   phoneHref: "tel:+15306802150",
   smsHref: "sms:+15306802150",
-  whatsappHref: "https://wa.me/15306802150",
   email: "info@dossiehvac.com",
   founders: "Anthony, Ronald",
   established: 2017,
@@ -24,8 +23,6 @@ export const siteConfig = {
     latitude: 39.9271,
     longitude: -122.1797,
   },
-  googleMapsUrl:
-    "https://www.google.com/maps/place/Corning,+CA+96021",
   googleMapsEmbedUrl:
     "https://www.google.com/maps?q=Corning+CA+96021&output=embed",
   license: "State License #1032964",
@@ -39,12 +36,8 @@ export const siteConfig = {
     facebook: "",
     youtube: "",
     instagram: "",
-    google: "https://www.google.com/maps/place/Corning,+CA+96021",
+    google: "",
     yelp: "",
-  },
-  googleRating: {
-    value: 5.0,
-    count: 24,
   },
 };
 

@@ -671,12 +671,12 @@ export function ReviewsSection() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <ButtonLink href={siteConfig.socials.google} variant="ghost" size="lg">
-            View on Google Maps <ArrowRight size={16} />
-          </ButtonLink>
           <ButtonLink href={siteConfig.phoneHref} size="lg">
             <Phone size={16} />
             Call {siteConfig.phone}
+          </ButtonLink>
+          <ButtonLink href="#contact" variant="outline" size="lg">
+            Request Service
           </ButtonLink>
         </div>
       </div>
@@ -880,19 +880,16 @@ export function ContactSection() {
                 </div>
               </div>
 
-              {/* WhatsApp */}
-              <div className="group flex items-center gap-4 rounded-3xl border border-slate-100 bg-white p-5 shadow-card transition hover:border-green-200 hover:shadow-md">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#25D366] shadow-md">
-                  <MessageCircle size={20} className="text-white" />
+              {/* Leadership & License */}
+              <div className="flex items-center gap-4 rounded-3xl border border-slate-100 bg-white p-5 shadow-card">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-orange-gradient shadow-glow-sm">
+                  <ShieldCheck size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-muted">WhatsApp</p>
-                  <a
-                    href={siteConfig.whatsappHref}
-                    className="text-base font-black text-navy hover:text-[#25D366] transition-colors"
-                  >
-                    Chat with us now
-                  </a>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted">Leadership & License</p>
+                  <p className="text-base font-black text-navy">
+                    State Lic #{siteConfig.licenseNumber} · {siteConfig.founders}
+                  </p>
                 </div>
               </div>
 

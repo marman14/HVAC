@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ExternalLink, Phone, Star } from "lucide-react";
+import { Phone, Star } from "lucide-react";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -18,7 +18,7 @@ export default function ReviewsPage() {
         <SectionHeading
           eyebrow="Customer experience"
           title={`Trusted local HVAC help in ${siteConfig.county}`}
-          subtitle={`${siteConfig.name} is listed on Google with a ${siteConfig.googleRating.value} rating from ${siteConfig.googleRating.count} review${siteConfig.googleRating.count === 1 ? "" : "s"}. For the fastest response, call ${siteConfig.phone}.`}
+          subtitle={`${siteConfig.name} is an owner-operated, independent HVAC contractor serving ${siteConfig.county}. State License #1032964, Established 2017. For the fastest response, call ${siteConfig.phone}.`}
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -33,21 +33,19 @@ export default function ReviewsPage() {
 
         <div className="mt-12 rounded-[2rem] bg-navy p-8 text-center text-white">
           <p className="text-sm font-black uppercase tracking-[0.2em] text-orange">
-            Google Business Profile
+            Direct Owner-Operator Support
           </p>
-          <h2 className="mt-4 text-3xl font-black">Find {siteConfig.name} on Google Maps</h2>
+          <h2 className="mt-4 text-3xl font-black">Speak With Anthony or Ronald</h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            View business hours and public Google reviews for our {siteConfig.address.city} HVAC
-            service.
+            Reach out directly for honest diagnostics, upfront pricing, and reliable heating & cooling services in {siteConfig.address.city} and throughout {siteConfig.county}.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <ButtonLink href={siteConfig.socials.google}>
-              <ExternalLink size={16} />
-              Open Google Listing
-            </ButtonLink>
-            <ButtonLink href={siteConfig.phoneHref} variant="outline">
+            <ButtonLink href={siteConfig.phoneHref}>
               <Phone size={16} />
               Call {siteConfig.phone}
+            </ButtonLink>
+            <ButtonLink href="/contact" variant="outline">
+              Request Service
             </ButtonLink>
           </div>
         </div>
